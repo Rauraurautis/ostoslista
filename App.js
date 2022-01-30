@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, TextInput, Button } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TextInput, Button, Alert } from 'react-native';
 
 export default function App() {
   const [product, setProduct] = useState("")
@@ -13,6 +13,10 @@ export default function App() {
 
   const clearItems = () => {
     setData([])
+  }
+
+  const alert = () => {
+    Alert.alert("This is a test alert!")
   }
 
   return (
