@@ -18,7 +18,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <TextInput style={styles.textfield} onChangeText={(text) => setProduct(text)} value={product} />
-      <Text>Hello</Text>
+      <Text>Hello World</Text>
       <View style={styles.buttoncontainer}>
         <Button title="ADD" onPress={() => addItem()} />
         <Button title="CLEAR" onPress={() => clearItems()}/>
